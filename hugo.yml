@@ -13,16 +13,16 @@ enableEmoji: true
 #配置菜单
 menu:
   main:
-    - name: search
+    - name: Search
       url: search/
       weight: 10
-    - name: publications
+    - name: Publications
       url: publications/
       weight: 10
-    - name: about
+    - name: About
       url: about/
       weight: 10
-    - name: home
+    - name: Home
       url: /
       weight: 10
 
