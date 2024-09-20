@@ -13,28 +13,21 @@ enableEmoji: true
 #配置菜单
 menu:
   main:
-    - name:  搜索
+    - name: search
       url: search/
       weight: 10
-    - name: 分类
-      url: tags/
+    - name: publications
+      url: publications/
       weight: 10
-    - name: 关于我
+    - name: about
       url: about/
       weight: 10
-    - name: 首页
+    - name: home
       url: /
       weight: 10
 
 #主题配置参数
-# params:
-#   defaultTheme: auto
-#   homeInfoParams:
-#     Title: "技能树"
-#     Content: >
-#       XXXXXXXXXX你要显示内容
-#   socialIcons:
-#     - name: Github
-#       url: "https://github.com/RY"
-#     - name: Email
-#       url: about/
+params:
+  ananke_socials:
+    - name: github
+      url: "https://github.com/RY5228"
