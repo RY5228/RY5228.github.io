@@ -1,15 +1,15 @@
 ---
 layout: archive
-title: "站点地图"
-permalink: /sitemap/
+title: "Sitemap"
+permalink: /en/sitemap/
 author_profile: true
-lang: zh
+lang: en
 translation_key: sitemap
 ---
 
 {% include base_path %}
 
-本站中文页面列表。
+English pages on this site.
 
 {% assign localized_pages = site.pages | where: "lang", page.lang | sort: "url" %}
 <ul>

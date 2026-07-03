@@ -27,13 +27,13 @@ author:
 footer:
   zh:
     follow_label: "关注："
-    feed_label: "Feed"
     powered_by: "技术支持："
-    sitemap_label: "Sitemap"
+    site_updated_label: "站点更新于"
+    sitemap_label: "站点地图"
   en:
     follow_label: "Follow:"
-    feed_label: "Feed"
     powered_by: "Powered by"
+    site_updated_label: "Site last updated"
     sitemap_label: "Sitemap"
 
 pages:
@@ -46,3 +46,6 @@ pages:
   cv:
     zh: /cv/
     en: /en/cv/
+  sitemap:
+    zh: /sitemap/
+    en: /en/sitemap/

@@ -2,13 +2,15 @@
 {% assign current_lang = page.lang | default: site.data.i18n.default | default: "zh" %}
 {% assign current_language = site.data.i18n.languages[current_lang] %}
 {% assign footer_text = site.data.i18n.footer[current_lang] %}
+{% assign sitemap_translations = site.data.i18n.pages.sitemap %}
 {% assign footer_name = current_language.site_title | default: site.name | default: site.title %}
 {% assign follow_label = footer_text.follow_label %}
-{% assign feed_label = footer_text.feed_label | default: "Feed" %}
 {% assign powered_by = footer_text.powered_by | default: "Powered by" %}
+{% assign site_updated_label = footer_text.site_updated_label | default: "Site last updated" %}
 {% assign sitemap_label = footer_text.sitemap_label | default: "Sitemap" %}
+{% assign sitemap_url = sitemap_translations[current_lang] | default: "/sitemap/" %}
 
-{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
+{% if site.author.github or site.author.bitbucket %}
 <div class="page__footer-follow">
   <ul class="social-icons">
     {% if follow_label %}
@@ -20,14 +22,11 @@
     {% if site.author.bitbucket %}
       <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
     {% endif %}
-    {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ feed_label }}</a></li>
-    {% endif %}
   </ul>
 </div>
 {% endif %}
 
 <div class="page__footer-copyright">
   &copy; {{ site.time | date: '%Y' }} {{ footer_name }}, {{ powered_by }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' }}, <a href="/sitemap/" style="text-transform: uppercase;">{{ sitemap_label }}</a>
+  {{ site_updated_label }} {{ "now" | date: '%Y-%m-%d' }}, <a href="{{ sitemap_url | prepend: base_path }}" style="text-transform: uppercase;">{{ sitemap_label }}</a>
 </div>
