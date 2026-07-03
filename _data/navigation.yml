@@ -6,7 +6,3 @@ main:
   - key: cv
     zh: "简历"
     en: "CV"
-
-  - key: sitemap
-    zh: "站点地图"
-    en: "Sitemap"
