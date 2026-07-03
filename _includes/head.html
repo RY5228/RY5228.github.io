@@ -4,7 +4,9 @@
 
 {% include seo.html %}
 
-<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ page.site_title | default: site.title }} Feed">
+{% assign head_lang = page.lang | default: site.data.i18n.default | default: "zh" %}
+{% assign head_language = site.data.i18n.languages[head_lang] %}
+<link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}" type="application/atom+xml" rel="alternate" title="{{ head_language.site_title | default: site.title }} Feed">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

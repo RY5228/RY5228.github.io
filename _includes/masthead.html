@@ -1,6 +1,16 @@
 {% include base_path %}
-{% assign site_title = page.site_title | default: site.title %}
-{% assign site_home_url = page.site_home_url | default: "/" %}
+{% assign current_lang = page.lang | default: site.data.i18n.default | default: "zh" %}
+{% assign alternate_lang = "en" %}
+{% if current_lang == "en" %}
+  {% assign alternate_lang = "zh" %}
+{% endif %}
+{% assign current_language = site.data.i18n.languages[current_lang] %}
+{% assign alternate_language = site.data.i18n.languages[alternate_lang] %}
+{% assign page_translations = site.data.i18n.pages[page.translation_key] %}
+{% assign site_title = current_language.site_title | default: site.title %}
+{% assign site_home_url = current_language.home_url | default: "/" %}
+{% assign language_toggle_url = page_translations[alternate_lang] %}
+{% assign language_toggle_label = alternate_language.label %}
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -11,13 +21,9 @@
             <a href="{{ site_home_url | prepend: base_path }}">{{ site_title }}</a>
           </li>
           {% for link in site.data.navigation.main %}
-            {% if page.lang == "en" %}
-              {% assign nav_title = link.en_title | default: link.title %}
-              {% assign nav_url = link.en_url | default: link.url %}
-            {% else %}
-              {% assign nav_title = link.title %}
-              {% assign nav_url = link.url %}
-            {% endif %}
+            {% assign nav_translations = site.data.i18n.pages[link.key] %}
+            {% assign nav_title = link[current_lang] | default: link.title %}
+            {% assign nav_url = nav_translations[current_lang] | default: link.url %}
             {% if nav_url contains 'http' %}
               {% assign domain = '' %}
             {% else %}
@@ -27,9 +33,9 @@
               <a href="{{ domain }}{{ nav_url }}">{{ nav_title }}</a>
             </li>
           {% endfor %}
-          {% if page.language_toggle_label and page.language_toggle_url %}
+          {% if language_toggle_label and language_toggle_url %}
             <li class="masthead__menu-item persist">
-              <a href="{{ page.language_toggle_url | prepend: base_path }}">{{ page.language_toggle_label }}</a>
+              <a href="{{ language_toggle_url | prepend: base_path }}">{{ language_toggle_label }}</a>
             </li>
           {% endif %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">

@@ -3,10 +3,12 @@
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
-{% assign author_name = page.author_name | default: author.name %}
-{% assign author_bio = page.author_bio | default: author.bio %}
-{% assign author_location = page.author_location | default: author.location %}
-{% assign author_employer = page.author_employer | default: author.employer %}
+{% assign current_lang = page.lang | default: site.data.i18n.default | default: "zh" %}
+{% assign localized_author = site.data.i18n.author[current_lang] %}
+{% assign author_name = localized_author.name | default: author.name %}
+{% assign author_bio = localized_author.bio | default: author.bio %}
+{% assign author_location = localized_author.location | default: author.location %}
+{% assign author_employer = localized_author.employer | default: author.employer %}
 
 <div itemscope itemtype="http://schema.org/Person">
 

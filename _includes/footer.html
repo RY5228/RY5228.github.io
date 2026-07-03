@@ -1,16 +1,12 @@
 {% include base_path %}
-{% assign footer_name = page.site_title | default: site.name | default: site.title %}
-{% if page.lang == "en" %}
-  {% assign follow_label = "Follow:" %}
-  {% assign feed_label = "Feed" %}
-  {% assign powered_by = "Powered by" %}
-  {% assign sitemap_label = "Sitemap" %}
-{% else %}
-  {% assign follow_label = site.data.ui-text[site.locale].follow_label %}
-  {% assign feed_label = site.data.ui-text[site.locale].feed_label | default: "Feed" %}
-  {% assign powered_by = site.data.ui-text[site.locale].powered_by | default: "Powered by" %}
-  {% assign sitemap_label = site.data.ui-text[site.locale].site_map | default: "Sitemap" %}
-{% endif %}
+{% assign current_lang = page.lang | default: site.data.i18n.default | default: "zh" %}
+{% assign current_language = site.data.i18n.languages[current_lang] %}
+{% assign footer_text = site.data.i18n.footer[current_lang] %}
+{% assign footer_name = current_language.site_title | default: site.name | default: site.title %}
+{% assign follow_label = footer_text.follow_label %}
+{% assign feed_label = footer_text.feed_label | default: "Feed" %}
+{% assign powered_by = footer_text.powered_by | default: "Powered by" %}
+{% assign sitemap_label = footer_text.sitemap_label | default: "Sitemap" %}
 
 {% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
 <div class="page__footer-follow">

@@ -4,8 +4,7 @@ title: "任毅"
 description: "北京大学电子信息专业博士在读，研究系统与技术协同优化、电子设计自动化与专用加速器架构。"
 author_profile: true
 lang: zh
-language_toggle_label: "English"
-language_toggle_url: "/en/"
+translation_key: home
 ---
 
 北京大学电子信息专业博士在读（2024 年至今），导师为[林亦波副教授](https://yibolin.com/)，联合导师为[孙广宇教授](https://gsunpku.github.io/)。本科毕业于清华大学姚班。

@@ -1,10 +1,8 @@
 main:
-  - title: "论文"
-    url: /publications/
-    en_title: "Publications"
-    en_url: /en/publications/
+  - key: publications
+    zh: "论文"
+    en: "Publications"
 
-  - title: "简历"
-    url: /cv/
-    en_title: "CV"
-    en_url: /en/cv/
+  - key: cv
+    zh: "简历"
+    en: "CV"

@@ -5,12 +5,11 @@
   {% assign seo_url = site.url | append: site.baseurl %}
 {% endif %}
 {% assign seo_url = seo_url | default: site.github.url %}
-{% assign seo_site_title = page.site_title | default: site.title %}
-{% assign seo_site_name = page.site_title | default: site.name | default: site.title %}
-{% assign seo_locale = site.locale | default: "en" %}
-{% if page.lang == "en" %}
-  {% assign seo_locale = "en-US" %}
-{% endif %}
+{% assign current_lang = page.lang | default: site.data.i18n.default | default: "zh" %}
+{% assign current_language = site.data.i18n.languages[current_lang] %}
+{% assign seo_site_title = current_language.site_title | default: site.title %}
+{% assign seo_site_name = current_language.site_title | default: site.name | default: site.title %}
+{% assign seo_locale = current_language.locale | default: site.locale | default: "en" %}
 
 {% if page.title %}
   {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: seo_site_title %}
@@ -97,7 +96,7 @@
     {
       "@context" : "http://schema.org",
       "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ page.site_title | default: site.social.name | default: site.name }}",
+      "name" : "{{ seo_site_name }}",
       "url" : {{ seo_url | jsonify }},
       "sameAs" : {{ site.social.links | jsonify }}
     }

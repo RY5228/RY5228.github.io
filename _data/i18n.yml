@@ -1,0 +1,48 @@
+default: zh
+
+languages:
+  zh:
+    label: "中文"
+    locale: "zh-CN"
+    site_title: "任毅"
+    home_url: /
+  en:
+    label: "English"
+    locale: "en-US"
+    site_title: "Yi Ren"
+    home_url: /en/
+
+author:
+  zh:
+    name: "任毅"
+    bio: "北京大学电子信息专业博士在读"
+    location: "Beijing, China"
+    employer: "Peking University"
+  en:
+    name: "Yi Ren"
+    bio: "Ph.D. student in Electronic Information at Peking University"
+    location: "Beijing, China"
+    employer: "Peking University"
+
+footer:
+  zh:
+    follow_label: "关注："
+    feed_label: "Feed"
+    powered_by: "技术支持："
+    sitemap_label: "Sitemap"
+  en:
+    follow_label: "Follow:"
+    feed_label: "Feed"
+    powered_by: "Powered by"
+    sitemap_label: "Sitemap"
+
+pages:
+  home:
+    zh: /
+    en: /en/
+  publications:
+    zh: /publications/
+    en: /en/publications/
+  cv:
+    zh: /cv/
+    en: /en/cv/
