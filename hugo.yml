@@ -15,7 +15,7 @@ languages:
   zh:
     locale: 'zh-CN'
     label: '中文'
-    title: 'Yi Ren'
+    title: '任毅'
     weight: 1
     menu:
       main:
