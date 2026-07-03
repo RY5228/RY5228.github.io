@@ -3,6 +3,7 @@ _site/
 .jekyll-cache/
 .sass-cache/
 .bundle/
+.vscode/
 /vendor/
 
 # Legacy Hugo build output
