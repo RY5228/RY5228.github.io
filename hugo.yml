@@ -13,8 +13,8 @@ enableEmoji: true
 #语言与菜单配置
 languages:
   zh:
-    languageCode: 'zh-CN'
-    languageName: '中文'
+    locale: 'zh-CN'
+    label: '中文'
     title: 'Yi Ren'
     weight: 1
     menu:
@@ -29,8 +29,8 @@ languages:
           url: /search/
           weight: 40
   en:
-    languageCode: 'en-US'
-    languageName: 'English'
+    locale: 'en-US'
+    label: 'English'
     title: 'Yi Ren'
     weight: 2
     menu:
