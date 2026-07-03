@@ -1,8 +1,8 @@
 #基础配置
 baseURL: 'http://ry5228.github.io'
-languageCode: 'zh-CN'
 title: 'Yi Ren'
 theme: 'ananke'
+defaultContentLanguage: 'zh'
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
@@ -10,21 +10,46 @@ buildFuture: false
 buildExpired: false
 enableEmoji: true
 
-#配置菜单
-menu:
-  main:
-    - name: Search
-      url: search/
-      weight: 10
-    - name: Publications
-      url: publications/
-      weight: 10
-    - name: About
-      url: about/
-      weight: 10
-    - name: Home
-      url: /
-      weight: 10
+#语言与菜单配置
+languages:
+  zh:
+    languageCode: 'zh-CN'
+    languageName: '中文'
+    title: 'Yi Ren'
+    weight: 1
+    menu:
+      main:
+        - name: 首页
+          url: /
+          weight: 10
+        - name: 关于
+          url: /about/
+          weight: 20
+        - name: 论文
+          url: /publications/
+          weight: 30
+        - name: 搜索
+          url: /search/
+          weight: 40
+  en:
+    languageCode: 'en-US'
+    languageName: 'English'
+    title: 'Yi Ren'
+    weight: 2
+    menu:
+      main:
+        - name: Home
+          url: /en/
+          weight: 10
+        - name: About
+          url: /about/
+          weight: 20
+        - name: Publications
+          url: /publications/
+          weight: 30
+        - name: Search
+          url: /search/
+          weight: 40
 
 #主题配置参数
 params:
