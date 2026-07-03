@@ -99,6 +99,7 @@ exclude:
   - .jekyll-assets-cache
   - .sass-cache
   - .vscode
+  - AGENTS.md
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
@@ -107,6 +108,7 @@ exclude:
   - config
   - Dockerfile
   - Gemfile
+  - Gemfile.lock
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
