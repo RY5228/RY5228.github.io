@@ -5,6 +5,7 @@ description: "Ph.D. student in Electronic Information at Peking University, rese
 author_profile: true
 lang: en
 site_title: "Yi Ren"
+site_home_url: "/en/"
 author_name: "Yi Ren"
 author_bio: "Ph.D. student in Electronic Information at Peking University"
 author_location: "Beijing, China"
