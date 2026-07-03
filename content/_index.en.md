@@ -2,7 +2,7 @@
 title: "Ren Yi"
 description: "Ph.D. student in Electronic Information at Peking University, studying STCO, EDA, and domain-specific accelerator architectures."
 cascade:
-  featured_image: '/images/ren-yi-profile.jpg'
+  featured_image: '/images/ai-chip.jpg'
 ---
 
 ![Ren Yi](/images/ren-yi-profile.jpg)
