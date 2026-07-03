@@ -1,0 +1,12 @@
+main:
+  - title: "中文"
+    url: /
+
+  - title: "English"
+    url: /en/
+
+  - title: "Publications"
+    url: /publications/
+
+  - title: "CV"
+    url: /cv/
