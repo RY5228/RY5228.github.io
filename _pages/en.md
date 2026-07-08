@@ -19,4 +19,20 @@ Will be updated.
 
 # Selected Papers
 
-Will be updated.
+### C9. CellE: Automated Standard Cell Library Extension via Equality Saturation
+
+- accepted
+- Yi Ren, Yukun Wang, Xiang Meng, Guoyao Cheng, Baokang Peng, Lining Zhang, Yibo Lin, Runsheng Wang and Guangyu Sun*
+- ACM/IEEE Design Automation Conference (DAC), Long Beach, CA, Jul 26-29, 2026.
+
+### C6. Orthrus: Dual-Loop Automated Framework for System-Technology Co-Optimization
+
+- preprint
+- Yi Ren, Baokang Peng, Chenhao Xue, Kairong Guo, Yukun Wang, Guoyao Cheng, Yibo Lin, Lining Zhang and Guangyu Sun*
+- IEEE/ACM International Conference on Computer-Aided Design (ICCAD), Munich, Germany, Oct, 2025.
+
+### C3. DiffuSE: Cross-Layer Design Space Exploration of DNN Accelerator via Diffusion-Driven Optimization
+
+- published
+- Yi Ren, Chenhao Xue, Jiaxing Zhang, Chen Zhang, Qiang Xu, Yibo Lin, Lining Zhang and Guangyu Sun
+- 2025 International Symposium of Electronics Design Automation (ISEDA), 756-761, 2025.
