@@ -15,7 +15,7 @@ His research interests include system and technology co-optimization (STCO), wit
 
 # Recent News
 
-- 2026-07: Excited to share that CellE has been accepted by [DAC 2026](https://dac.com/2026)! We will present the work in the afternoon of July 28 in Long Beach, CA.
+- 2026-03: Excited to share that CellE has been accepted by [DAC 2026](https://dac.com/2026)! We will present the work in the afternoon of July 28 in Long Beach, CA.
 - 2025-10: Honored to win Second Prize at the [ICCAD 2025 CADathlon](https://2025.iccad.com/cadathlon-iccad-2025/) with Ruiyang Ma!
 
 # Selected Papers
