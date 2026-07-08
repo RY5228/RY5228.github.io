@@ -34,5 +34,5 @@ translation_key: home
 
 ### [C3. DiffuSE: Cross-Layer Design Space Exploration of DNN Accelerator via Diffusion-Driven Optimization](https://ieeexplore.ieee.org/abstract/document/11100315/)
 
-- Yi Ren, Chenhao Xue, Jiaxing Zhang, Chen Zhang, Qiang Xu, Yibo Lin, Lining Zhang and Guangyu Sun
+- Yi Ren, Chenhao Xue, Jiaxing Zhang, Chen Zhang, Qiang Xu, Yibo Lin, Lining Zhang and Guangyu Sun*
 - 2025 International Symposium of Electronics Design Automation (ISEDA), 756-761, 2025.

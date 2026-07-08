@@ -28,7 +28,7 @@ translation_key: publications
 ### J7. A Full-Stack Performance Evaluation Infrastructure for 3D-DRAM-based LLM Accelerators
 
 - [preprint](https://arxiv.org/abs/2604.08044)
-- Cong Li, Chenhao Xue, Yi Ren, Xiping Dong, Yu Cheng, Yinbo Hu, Fujun Bai, Yixin Guo, Xiping Jiang, Qiang Wu, Zhi Yang, Zhe Cheng, Yuan Xie and Guangyu Sun
+- Cong Li, Chenhao Xue, Yi Ren, Xiping Dong, Yu Cheng, Yinbo Hu, Fujun Bai, Yixin Guo, Xiping Jiang, Qiang Wu, Zhi Yang, Zhe Cheng, Yuan Xie and Guangyu Sun*
 - arXiv preprint arXiv:2604.08044, 2026.
 
 ## 2025
@@ -45,22 +45,22 @@ translation_key: publications
 
 ### [C4. Lembda: Optimizing LLM Inference on Embedded Platforms via CPU/FPGA Co-processing](https://link.springer.com/chapter/10.1007/978-981-95-1021-4_35)
 
-- Jinwei Zhou, Chenhao Xue, Xiping Dong, Yi Ren, Jiaxing Zhang, Guangyu Sun and Xinnan Lin
+- Jinwei Zhou, Chenhao Xue, Xiping Dong, Yi Ren, Jiaxing Zhang, Guangyu Sun* and Xinnan Lin*
 - International Symposium on Advanced Parallel Processing Technologies (APPT), 426-431, 2025.
 
 ### [C3. DiffuSE: Cross-Layer Design Space Exploration of DNN Accelerator via Diffusion-Driven Optimization](https://ieeexplore.ieee.org/abstract/document/11100315/)
 
-- Yi Ren, Chenhao Xue, Jiaxing Zhang, Chen Zhang, Qiang Xu, Yibo Lin, Lining Zhang and Guangyu Sun
+- Yi Ren, Chenhao Xue, Jiaxing Zhang, Chen Zhang, Qiang Xu, Yibo Lin, Lining Zhang and Guangyu Sun*
 - 2025 International Symposium of Electronics Design Automation (ISEDA), 756-761, 2025.
 
 ### [C2. DOMAC: Differentiable Optimization for High-Speed Multipliers and Multiply-Accumulators](https://ieeexplore.ieee.org/abstract/document/11101018/)
 
-- Chenhao Xue, Yi Ren, Jinwei Zhou, Kezhi Li, Chen Zhang, Yibo Lin, Lining Zhang, Qiang Xu and Guangyu Sun
+- Chenhao Xue, Yi Ren, Jinwei Zhou, Kezhi Li, Chen Zhang, Yibo Lin, Lining Zhang, Qiang Xu and Guangyu Sun*
 - 2025 International Symposium of Electronics Design Automation (ISEDA), 250-255, 2025.
 
 ## 2024
 
 ### [C1. Stream-Based Data Placement for Near-Data Processing with Extended Memory](https://ieeexplore.ieee.org/abstract/document/10764709/)
 
-- Yiwei Li, Boyu Tian, Yi Ren and Mingyu Gao
+- Yiwei Li, Boyu Tian, Yi Ren and Mingyu Gao*
 - 57th IEEE/ACM International Symposium on Microarchitecture (MICRO), 2024.
