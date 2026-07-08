@@ -28,23 +28,38 @@ jobs:
         with:
           ruby-version: "3.3"
           bundler-cache: true
+      - name: Restore CV PDFs
+        id: cv-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            files/ren-yi-cv-zh.pdf
+            files/yi-ren-cv-en.pdf
+          key: ${{ runner.os }}-cv-pdfs-${{ hashFiles('_cv_latex/**/*.tex', '_cv_latex/**/*.sty', '_cv_latex/**/*.bib', '_cv_latex/**/*.jpg', '.github/workflows/jekyll.yml') }}
       - name: Compile Chinese CV
+        if: steps.cv-cache.outputs.cache-hit != 'true'
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv-llt.tex
           working_directory: _cv_latex/zh
           latexmk_use_xelatex: true
       - name: Compile English CV
+        if: steps.cv-cache.outputs.cache-hit != 'true'
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv-llt.tex
           working_directory: _cv_latex/en
           latexmk_use_xelatex: true
       - name: Stage CV PDFs
+        if: steps.cv-cache.outputs.cache-hit != 'true'
         run: |
           mkdir -p files
           cp _cv_latex/zh/cv-llt.pdf files/ren-yi-cv-zh.pdf
           cp _cv_latex/en/cv-llt.pdf files/yi-ren-cv-en.pdf
+      - name: Check CV PDFs
+        run: |
+          test -f files/ren-yi-cv-zh.pdf
+          test -f files/yi-ren-cv-en.pdf
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       - name: Upload artifact
