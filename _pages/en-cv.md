@@ -7,4 +7,5 @@ lang: en
 translation_key: cv
 ---
 
-[Download CV PDF](/files/yi-ren-cv-en.pdf)
+- [Download English CV PDF](/files/yi-ren-cv-en.pdf)
+- [下载中文 PDF 简历](/files/ren-yi-cv-zh.pdf)
