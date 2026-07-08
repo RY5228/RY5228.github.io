@@ -15,8 +15,8 @@ translation_key: home
 
 # 近期动态
 
-- 2026-07：CellE 被 [DAC 2026](https://dac.com/2026) 接收，并将于 7 月 28 日下午在美国长滩报告。
-- 2025-10：任毅与马瑞阳获得 [ICCAD 2025 CADathlon](https://2025.iccad.com/cadathlon-iccad-2025/) 第二名。
+- 2026-07：很高兴分享，CellE 被 [DAC 2026](https://dac.com/2026) 接收！我们将于 7 月 28 日下午在美国长滩报告这项工作。
+- 2025-10：很荣幸与马瑞阳一起获得 [ICCAD 2025 CADathlon](https://2025.iccad.com/cadathlon-iccad-2025/) 第二名！
 
 # 代表论文
 
