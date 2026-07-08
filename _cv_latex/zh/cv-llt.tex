@@ -8,8 +8,8 @@
 % 24 Aug, 2024 -- Updated X (Twitter) icon
 \documentclass[a4paper,skipsamekey,11pt,english]{curve}
 
-% Chinese text is handled with TeX Live's Fandol fonts and ucharclasses.
-
+% Uncomment to enable Chinese; needs XeLaTeX
+\usepackage{ctex}
 
 % Default biblatex style used for the publication list is APA6. If you wish to use a different style or pass other options to biblatex you can change them here. 
 \PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true,maxbibnames=999,maxnames=999}{biblatex}
@@ -34,27 +34,10 @@
 % Change the fonts if you want
 \ifxetexorluatex % If you're using XeLaTeX or LuaLaTeX
   \usepackage{fontspec} 
-  \setmainfont{Cochineal-Roman.otf}[
-    BoldFont = Cochineal-Bold.otf,
-    ItalicFont = Cochineal-Italic.otf,
-    BoldItalicFont = Cochineal-BoldItalic.otf
-  ]
-  \setsansfont{Cabin-Regular.otf}[
-    BoldFont = Cabin-Bold.otf
-  ]
-  \setmonofont{Inconsolatazi4-Regular.otf}[
-    BoldFont = Inconsolatazi4-Bold.otf,
-    Scale = 0.9
-  ]
-  \newfontfamily\cjkfont{FandolSong-Regular.otf}[
-    BoldFont = FandolHei-Regular.otf,
-    ItalicFont = FandolKai-Regular.otf
-  ]
-  \usepackage{ucharclasses}
-  \setDefaultTransitions{\normalfont}{}
-  \setTransitionsForCJK{\cjkfont}{}
-  \XeTeXlinebreaklocale "zh"
-  \XeTeXlinebreakskip = 0pt plus 1pt
+  %% You can use \setmainfont etc; I'm just using these font packages here because they provide OpenType fonts for use by XeLaTeX/LuaLaTeX anyway
+  \usepackage[p,osf,swashQ]{cochineal}
+  \usepackage[medium,bold]{cabin}
+  \usepackage[varqu,varl,scale=0.9]{zi4}
 \else % If you're using pdfLaTeX or latex
   \usepackage[T1]{fontenc}
   \usepackage[p,osf,swashQ]{cochineal}
