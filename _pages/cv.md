@@ -7,4 +7,4 @@ lang: zh
 translation_key: cv
 ---
 
-简历内容将后续更新。
+[下载中文 PDF 简历](/files/ren-yi-cv-zh.pdf)

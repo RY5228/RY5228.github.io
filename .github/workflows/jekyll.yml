@@ -28,6 +28,23 @@ jobs:
         with:
           ruby-version: "3.3"
           bundler-cache: true
+      - name: Compile Chinese CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv-llt.tex
+          working_directory: _cv_latex/zh
+          latexmk_use_xelatex: true
+      - name: Compile English CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv-llt.tex
+          working_directory: _cv_latex/en
+          latexmk_use_xelatex: true
+      - name: Stage CV PDFs
+        run: |
+          mkdir -p files
+          cp _cv_latex/zh/cv-llt.pdf files/ren-yi-cv-zh.pdf
+          cp _cv_latex/en/cv-llt.pdf files/yi-ren-cv-en.pdf
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
       - name: Upload artifact

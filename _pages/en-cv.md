@@ -7,4 +7,4 @@ lang: en
 translation_key: cv
 ---
 
-CV content will be added here.
+[Download CV PDF](/files/yi-ren-cv-en.pdf)

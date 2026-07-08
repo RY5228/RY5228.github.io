@@ -6,6 +6,25 @@ _site/
 .vscode/
 /vendor/
 
+# LaTeX build output
+*.aux
+*.bcf
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lot
+*.lof
+*.xdv
+comment.cut
+_cv_latex/**/*.pdf
+files/*.pdf
+
 # Legacy Hugo build output
 public/
 resources/
