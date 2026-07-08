@@ -15,7 +15,8 @@ His research interests include system and technology co-optimization (STCO), wit
 
 # Recent News
 
-Will be updated.
+- 2026-07: CellE was accepted by [DAC 2026](https://dac.com/2026) and will be presented in the afternoon of July 28 in Long Beach, CA.
+- 2025-10: Yi Ren and Ruiyang Ma won Second Prize at the [ICCAD 2025 CADathlon](https://2025.iccad.com/cadathlon-iccad-2025/).
 
 # Selected Papers
 
