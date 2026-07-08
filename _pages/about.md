@@ -29,7 +29,7 @@ translation_key: home
 
 ### [C6. Orthrus: Dual-Loop Automated Framework for System-Technology Co-Optimization](https://ieeexplore.ieee.org/abstract/document/11240673/)
 
-- Yi Ren, Baokang Peng, Chenhao Xue, Kairong Guo, Yukun Wang, Guoyao Cheng, Yibo Lin, Lining Zhang and Guangyu Sun*
+- Yi Ren, Baokang Peng, Chenhao Xue, Kairong Guo, Yukun Wang, Guoyao Cheng, Yibo Lin, Lining Zhang* and Guangyu Sun*
 - IEEE/ACM International Conference on Computer-Aided Design (ICCAD), Munich, Germany, Oct, 2025.
 
 ### [C3. DiffuSE: Cross-Layer Design Space Exploration of DNN Accelerator via Diffusion-Driven Optimization](https://ieeexplore.ieee.org/abstract/document/11100315/)

@@ -35,7 +35,7 @@ translation_key: publications
 
 ### [C6. Orthrus: Dual-Loop Automated Framework for System-Technology Co-Optimization](https://ieeexplore.ieee.org/abstract/document/11240673/)
 
-- Yi Ren, Baokang Peng, Chenhao Xue, Kairong Guo, Yukun Wang, Guoyao Cheng, Yibo Lin, Lining Zhang and Guangyu Sun*
+- Yi Ren, Baokang Peng, Chenhao Xue, Kairong Guo, Yukun Wang, Guoyao Cheng, Yibo Lin, Lining Zhang* and Guangyu Sun*
 - IEEE/ACM International Conference on Computer-Aided Design (ICCAD), Munich, Germany, Oct, 2025.
 
 ### [C5. GadgetMeter: Quantitatively and Accurately Gauging the Exploitability of Speculative Gadgets](https://dx.doi.org/10.14722/ndss.2025.241723)
