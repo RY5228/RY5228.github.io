@@ -15,14 +15,16 @@ languages:
 author:
   zh:
     name: "任毅"
-    bio: "北京大学电子信息专业博士在读"
+    bio: "<a href=\"https://www.pku.edu.cn/\">北京大学</a>电子信息专业博士在读"
     location: "Beijing, China"
     employer: "Peking University"
+    employer_url: "https://www.pku.edu.cn/"
   en:
     name: "Yi Ren"
-    bio: "Ph.D. student in Electronic Information at Peking University"
+    bio: "Ph.D. student in Electronic Information at <a href=\"https://english.pku.edu.cn/\">Peking University</a>"
     location: "Beijing, China"
     employer: "Peking University"
+    employer_url: "https://english.pku.edu.cn/"
 
 footer:
   zh:

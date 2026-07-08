@@ -9,6 +9,7 @@
 {% assign author_bio = localized_author.bio | default: author.bio %}
 {% assign author_location = localized_author.location | default: author.location %}
 {% assign author_employer = localized_author.employer | default: author.employer %}
+{% assign author_employer_url = localized_author.employer_url | default: author.employer_url %}
 
 <div itemscope itemtype="http://schema.org/Person">
 
@@ -34,7 +35,13 @@
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author_location }}</li>
       {% endif %}
       {% if author_employer %}
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author_employer }}</li>
+        <li class="author__desktop">
+          {% if author_employer_url %}
+            <a href="{{ author_employer_url }}"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author_employer }}</a>
+          {% else %}
+            <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author_employer }}
+          {% endif %}
+        </li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
